@@ -19,10 +19,11 @@ static const char col_gray4[]       = "#eeeeee";
 static const char col_dark_teal[]	= "#098772";
 static const char col_red[]	        = "#e60e0e";
 static const char col_dark_green[]	= "#0b8552";
+static const char col_blue[]	= "#1775d1";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_dark_green,  col_dark_green  },
+	[SchemeSel]  = { col_gray4, col_blue,  col_blue  },
 };
 
 /* tagging */
@@ -80,7 +81,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_dark_green, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
-static const char *browser[] = { "firefox", NULL };
+static const char *browser[] = { "brave", NULL };
 static const char *emacs[] = { "emacs", NULL };
 
 #include "movestack.c"
